@@ -141,7 +141,7 @@ if __name__ == "__main__":
                     full_image, net_image, pad = get_image_tensor(image, input_size[0])
                     pred = model.forward(net_image)
 
-                    det = model.process_predictions(pred[0], full_image, pad)
+                    #det = model.process_predictions(pred[0], full_image, pad)
                     #logger.info("det info {}".format(det))
 
                     tinference, tnms = model.get_last_inference_time()
