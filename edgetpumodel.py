@@ -260,10 +260,10 @@ class EdgeTPUModel:
                     output[base]['cls'] = cls
                     output[base]['cls_name'] = self.names[c]
                     
-            if save_txt:
-                output_txt = base+"txt"
-                with open(output_txt, 'w') as f:
-                   json.dump(output, f, indent=1)
+            #if save_txt:
+               # output_txt = base+"txt"
+               # with open(output_txt, 'w') as f:
+                #   json.dump(output, f, indent=1)
             if save_img:
               cv2.imwrite(output_path, output_image)
             
